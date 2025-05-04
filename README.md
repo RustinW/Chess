@@ -1,5 +1,4 @@
-===========
-=: Core Concepts :=======
+=======: Core Concepts :=======
   1. 2D Arrays: I will use a 2D array of Piece objects to represent the 8x8 game board. Each index in the array
   corresponds to a square on the board and will either contain a chess piece object or be null if empty. It will be
   used for rendering the board, tracking valid moves, and determining the game state.
@@ -19,9 +18,7 @@
   model and piece classes.
 
 
-=========================
-=: Your Implementation :=
-=========================
+============== Your Implementation :===============
 Chess.java:
 This is the main class which maintains the board array, makes sure that turn order occurs, makes sure the desired move
 is valid and then if it is valid it will execute the move which includes niche rules such as castling, en passant, and
