@@ -1,16 +1,6 @@
-=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-CIS 1200 Game Project README
-PennKey: rwiser
-=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-
 ===================
 =: Core Concepts :=
 ===================
-
-- List the four core concepts, the features they implement, and why each feature
-  is an appropriate use of the concept. Incorporate the feedback you got after
-  submitting your proposal.
-
   1. 2D Arrays: I will use a 2D array of Piece objects to represent the 8x8 game board. Each index in the array
   corresponds to a square on the board and will either contain a chess piece object or be null if empty. It will be
   used for rendering the board, tracking valid moves, and determining the game state.
@@ -32,9 +22,6 @@ PennKey: rwiser
 =========================
 =: Your Implementation :=
 =========================
-
-- Provide an overview of each of the classes in your code, and what their
-  function is in the overall game.
 Chess.java:
 This is the main class which maintains the board array, makes sure that turn order occurs, makes sure the desired move
 is valid and then if it is valid it will execute the move which includes niche rules such as castling, en passant, and
@@ -85,8 +72,6 @@ Moves any number of vacant squares along a rank or file. Also, checks that all s
 This rejects diagonal moves or jumps over pieces. isValidMove() implements straight line path checking via
 rowStep / colStep.
 
-- Were there any significant stumbling blocks while you were implementing your
-  game (related to your design, or otherwise)?
 There were a ton of stumbling blocks when I was trying to implement my game. First, implementing en passant
 correctly was very difficult since it required recording the opponent's last pawn double step and then simulating
 the capture on an empty square. Then, castling was difficult since the logic needed both move validation which included
@@ -95,17 +80,6 @@ effects of castling such as checkmate. Finally, checkmate was the most difficult
 made a checkmate detection with a board copy helper in order to avoid mutable rollback and ensured no move puts your
 own king in check.
 
-- Evaluate your design. Is there a good separation of functionality? How well is
-  private state encapsulated? What would you refactor, if given the chance?
 I believe that I achieved good separation of functionality with Chess + the piece classes which are completely
 independent of the UI (ChessBoard). The private state of board and whiteTurn is very well encapsulated and the public
 APIs only allow specific interactions. If I refactor this, I would possibly create an object for undo/redo the move.
-
-
-========================
-=: External Resources :=
-========================
-
-- Cite any external resources (images, tutorials, etc.) that you may have used 
-  while implementing your game.
-I did not use any external resources for my code.
