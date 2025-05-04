@@ -29,15 +29,6 @@ PennKey: rwiser
   the rook and king movement history. These rules will be enforced during gameplay using helper methods within the game
   model and piece classes.
 
-
-===============================
-=: File Structure Screenshot :=
-===============================
-- Include a screenshot of your project's file structure. This should include
-  all of the files in your project, and the folders they are in. You can
-  upload this screenshot in your homework submission to gradescope, named 
-  "file_structure.png".
-
 =========================
 =: Your Implementation :=
 =========================
