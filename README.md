@@ -1,6 +1,5 @@
 ===========
-=: Core Concepts :=
-===================
+=: Core Concepts :=======
   1. 2D Arrays: I will use a 2D array of Piece objects to represent the 8x8 game board. Each index in the array
   corresponds to a square on the board and will either contain a chess piece object or be null if empty. It will be
   used for rendering the board, tracking valid moves, and determining the game state.
@@ -18,6 +17,7 @@
   For example, I will look for when a player's move leaves their own king in check or if castling move is legal based on
   the rook and king movement history. These rules will be enforced during gameplay using helper methods within the game
   model and piece classes.
+
 
 =========================
 =: Your Implementation :=
