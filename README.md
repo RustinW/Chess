@@ -1,4 +1,4 @@
-===================
+===========
 =: Core Concepts :=
 ===================
   1. 2D Arrays: I will use a 2D array of Piece objects to represent the 8x8 game board. Each index in the array
